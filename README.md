@@ -1,4 +1,11 @@
-# Cycle Accurate MC6809 Core
+# Hitachi HD6309 version of MC6809 CPU
+## Based on Greg Miller's cycle-acurate MC6809 core
+## Started by Roger Taylor in May 2017
+## Dropped to GutHub on Jan 15, 2025
+
+
+# The following comments are from Greg Miller's mc6809 repo
+
 
 ## Details
 
