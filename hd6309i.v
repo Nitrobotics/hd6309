@@ -32,7 +32,7 @@
 
 
 
-module hd6309
+module hd6309i
 #(
     parameter ILLEGAL_INSTRUCTIONS="IGNORE"
 ) 
