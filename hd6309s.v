@@ -1,26 +1,6 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/18/2016 09:25:01 PM
-// Design Name: 
-// Module Name: 6809 Superset module of MC6809 and MC6809E signals
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
-module mc6809s(
+module hd6309s(
     input   [7:0] D,
     output  [7:0] DOut,
     output  [15:0] ADDR,
@@ -49,7 +29,7 @@ module mc6809s(
     assign  Q = rQ;
     reg     nCoreRESET;
     
- mc6809i corecpu(.D(D), .DOut(DOut), .ADDR(ADDR), .RnW(RnW), .E(rE), .Q(rQ), .BS(BS), .BA(BA), .nIRQ(nIRQ), .nFIRQ(nFIRQ), .nNMI(nNMI), .AVMA(AVMA), .BUSY(BUSY), .LIC(LIC), .nRESET(nCoreRESET),
+ hd6309i corecpu(.D(D), .DOut(DOut), .ADDR(ADDR), .RnW(RnW), .E(rE), .Q(rQ), .BS(BS), .BA(BA), .nIRQ(nIRQ), .nFIRQ(nFIRQ), .nNMI(nNMI), .AVMA(AVMA), .BUSY(BUSY), .LIC(LIC), .nRESET(nCoreRESET),
                  .nDMABREQ(nDMABREQ), .nHALT(nHALT), .RegData(RegData) );
                  
  always @(posedge CLK4)
